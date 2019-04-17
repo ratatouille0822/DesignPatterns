@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最小知识原则", "..\最小知识原则\最小知识原则.vcxproj", "{CE1771CC-DBA9-4798-B154-E8EF04559E20}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyArray", "MyArray\MyArray.vcxproj", "{2D8512B8-ACE7-4BEE-8E91-DE7790016E6A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyArray", "..\MyArray\MyArray.vcxproj", "{2D8512B8-ACE7-4BEE-8E91-DE7790016E6A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "单例原则", "单例原则\单例原则.vcxproj", "{071748E0-E3DC-49B1-A619-F5D052119DBC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "单例原则", "..\单例原则\单例原则.vcxproj", "{071748E0-E3DC-49B1-A619-F5D052119DBC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "开闭原则", "开闭原则\开闭原则.vcxproj", "{CAD612C1-9616-4599-9D5E-5357E5172234}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "开闭原则", "..\开闭原则\开闭原则.vcxproj", "{CAD612C1-9616-4599-9D5E-5357E5172234}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最小知识原则", "最小知识原则\最小知识原则.vcxproj", "{CE1771CC-DBA9-4798-B154-E8EF04559E20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Debug|x64.ActiveCfg = Debug|x64
-		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Debug|x64.Build.0 = Debug|x64
-		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Debug|x86.ActiveCfg = Debug|Win32
-		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Debug|x86.Build.0 = Debug|Win32
-		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Release|x64.ActiveCfg = Release|x64
-		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Release|x64.Build.0 = Release|x64
-		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Release|x86.ActiveCfg = Release|Win32
-		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Release|x86.Build.0 = Release|Win32
 		{2D8512B8-ACE7-4BEE-8E91-DE7790016E6A}.Debug|x64.ActiveCfg = Debug|x64
 		{2D8512B8-ACE7-4BEE-8E91-DE7790016E6A}.Debug|x64.Build.0 = Debug|x64
 		{2D8512B8-ACE7-4BEE-8E91-DE7790016E6A}.Debug|x86.ActiveCfg = Debug|Win32
@@ -51,6 +43,14 @@ Global
 		{CAD612C1-9616-4599-9D5E-5357E5172234}.Release|x64.Build.0 = Release|x64
 		{CAD612C1-9616-4599-9D5E-5357E5172234}.Release|x86.ActiveCfg = Release|Win32
 		{CAD612C1-9616-4599-9D5E-5357E5172234}.Release|x86.Build.0 = Release|Win32
+		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Debug|x64.ActiveCfg = Debug|x64
+		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Debug|x64.Build.0 = Debug|x64
+		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Debug|x86.ActiveCfg = Debug|Win32
+		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Debug|x86.Build.0 = Debug|Win32
+		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Release|x64.ActiveCfg = Release|x64
+		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Release|x64.Build.0 = Release|x64
+		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Release|x86.ActiveCfg = Release|Win32
+		{CE1771CC-DBA9-4798-B154-E8EF04559E20}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
