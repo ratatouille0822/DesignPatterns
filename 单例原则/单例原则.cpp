@@ -4,10 +4,10 @@
 
 using namespace std;
 
-class Singleton
+class HungrySingleton
 {
 public:
-	static Singleton* instance()
+	static HungrySingleton* instance()
 	{
 		return singleton_pointer;
 	}
@@ -22,31 +22,32 @@ public:
 	}
 
 private:
-	static Singleton* singleton_pointer;
+	static HungrySingleton* singleton_pointer;
 	static int cnt ;
 
-	Singleton()
+	HungrySingleton()
+	{
+		cout << "HungrySingleton has been constructed" << endl;
+	}
+	
+	HungrySingleton(const HungrySingleton& singleton_instance)
 	{
 
 	}
 	
-	Singleton(const Singleton& singleton_instance)
-	{
-
-	}
-	
-	~Singleton()
+	~HungrySingleton()
 	{
 
 	}
 };
 
-Singleton* Singleton::singleton_pointer = new Singleton;
-int Singleton::cnt = 0;
+HungrySingleton* HungrySingleton::singleton_pointer = new HungrySingleton;
+int HungrySingleton::cnt = 0;
 
+//Test 01 是饿汉式单例；
 void test01()
 {
-	Singleton* singleton_printer = Singleton::instance();
+	HungrySingleton* singleton_printer = HungrySingleton::instance();
 	singleton_printer->print_texts("hello1");
 	singleton_printer->get_cnt();
 	singleton_printer->print_texts("hello2");
@@ -54,9 +55,40 @@ void test01()
 
 }
 
+class LazySingleton
+{
+public:
+	static LazySingleton* GetInstance()
+	{
+		lazy_singleton_instance = new LazySingleton;
+		return lazy_singleton_instance;
+	}
+private:
+	LazySingleton()
+	{
+		cout << "A lazy singleton has been constructed" << endl;
+	}
+	LazySingleton(const LazySingleton& lazy_singleton_instance)
+	{
+
+	}
+	static LazySingleton* lazy_singleton_instance;
+};
+
+LazySingleton* LazySingleton::lazy_singleton_instance = NULL;
+
+//测试懒汉模式：
+void test02()
+{
+	LazySingleton* p1 = LazySingleton::GetInstance();
+
+}
+
+
 int main()
 {
+    std::cout << "-------------->Main() started here<----------------\n"; 
 	test01();
-    std::cout << "Hello World!\n"; 
+	test02();
 }
 
